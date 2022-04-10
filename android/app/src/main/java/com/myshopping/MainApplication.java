@@ -1,4 +1,4 @@
-package com.myshopping;
+package com.abilio.myshopping;
 
 import android.app.Application;
 import android.content.Context;
@@ -20,6 +20,7 @@ import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+
 
 public class MainApplication extends Application implements ReactApplication {
   private final ReactNativeHost mReactNativeHost = new ReactNativeHostWrapper(
@@ -85,7 +86,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.myshopping.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.abilio.myshopping.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

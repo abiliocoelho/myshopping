@@ -1,4 +1,4 @@
-package com.myshopping;
+package com.abilio.myshopping;
 
 import android.os.Bundle;
 
